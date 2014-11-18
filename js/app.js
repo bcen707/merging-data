@@ -9,9 +9,9 @@
 "use strict";
 
 angular.module('AddressBook', [])
-	.controller('AddressController', function($scope)
-			$scope.employees = pawneeEmployees;
-			$scope.order = 'lastName';
+	.controller('AddressController', function($scope) {
+		$scope.employees = pawneeEmployees;
+		$scope.order = 'lastName';
 
 
 
