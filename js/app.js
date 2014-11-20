@@ -1,9 +1,10 @@
 /* 
-    app.js
-    Angular application for the address book challenge
+Billy Cen
+INFO 343
+Assignment 6
 
-    Add code here to create a new Angular application and controller.
-    The array of employee objects is already in a global variable named 'pawneeEmployees'
+Angular application for the address book challenge
+
 */
 
 "use strict";
@@ -13,6 +14,8 @@ angular.module('AddressBook', [])
 		$scope.employees = pawneeEmployees;
 		$scope.order = 'lastName';
 
-
+		$scope.isSortedBy = function(colName) {
+			return $scope.order == colName;
+		};
 
 	});
